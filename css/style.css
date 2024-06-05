@@ -116,7 +116,7 @@ body,
   height: 100%;
 }
 body {
-  background: #eee;
+  background: #f1f3f5;
   font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -167,7 +167,7 @@ body {
   -ms-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   z-index: 1;
-  background: #F1F3F5;
+  background: #f1f3f5;
 }
 .mobile-nav-on #wrap {
   left: 280px;
@@ -191,16 +191,16 @@ body {
   margin-bottom: 1em;
   margin-left: 5px;
   line-height: 1em;
-  /* text-shadow: 0 1px #fff; */
+  text-shadow: 0 1px #fff;
   font-weight: bold;
 }
 .article-inner,
 .archive-article-inner {
   background: #fff;
-  /* -webkit-box-shadow: 1px 2px 3px #ddd;
+  -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
-  border: 1px solid #ddd; */
-  border-radius: 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
 }
 .article-entry h1,
 .widget h1 {
@@ -303,9 +303,9 @@ body {
 #header {
   height: 300px;
   position: relative;
-  /* border-bottom: 1px solid #ddd; */
+  border-bottom: 1px solid #ddd;
 }
-/* #header:before,
+#header:before,
 #header:after {
   content: "";
   position: absolute;
@@ -326,7 +326,7 @@ body {
   background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
   background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
   background: linear-gradient(transparent, rgba(0,0,0,0.2));
-} */
+}
 #header-outer {
   height: 100%;
   position: relative;
@@ -344,7 +344,6 @@ body {
   background: url("images/banner.jpg") center #000;
   background-size: cover;
   z-index: -1;
-  opacity: .5;
 }
 #header-title {
   text-align: center;
@@ -357,8 +356,9 @@ body {
 #logo,
 #subtitle {
   text-decoration: none;
-  color: black;
-  font-weight: 700;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
   font-size: 40px;
@@ -370,7 +370,6 @@ body {
   line-height: 16px;
   letter-spacing: 1px;
 }
-
 #subtitle-wrap {
   margin-top: 16px;
 }
@@ -381,10 +380,10 @@ body {
 .nav-icon,
 .main-nav-link {
   float: left;
-  color: rgba(0,0,0, 0.8);
-  opacity: 0.8;
+  color: #fff;
+  opacity: 0.6;
   text-decoration: none;
-  /* text-shadow: 0 1px rgba(0,0,0,0.2); */
+  text-shadow: 0 1px rgba(0,0,0,0.2);
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
@@ -406,7 +405,7 @@ body {
   cursor: pointer;
 }
 .main-nav-link {
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 479px) {
@@ -660,7 +659,7 @@ a.article-title:hover {
   line-height: 1em;
   padding: 6px 15px;
   border-radius: 15px;
-  background: #eee;
+  background: #f1f3f5;
   color: #999;
   text-shadow: 0 1px #fff;
   text-decoration: none;
@@ -823,7 +822,7 @@ a.article-title:hover {
   line-height: 36px;
 }
 .article-share-links {
-  background: #eee;
+  background: #f1f3f5;
 }
 .article-share-links:before,
 .article-share-links:after {
@@ -1077,7 +1076,7 @@ a.article-title:hover {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 .article-entry code {
-  background: #eee;
+  background: #f1f3f5;
   text-shadow: 0 1px #fff;
   padding: 0 0.3em;
 }
@@ -1273,21 +1272,19 @@ pre .javascript .function {
 }
 .widget {
   color: #777;
-  /* text-shadow: 0 1px #fff; */
-  background: #16385A0F;
-  /* -webkit-box-shadow: 0 -1px 4px #ccc inset;
+  text-shadow: 0 1px #fff;
+  background: #ddd;
+  -webkit-box-shadow: 0 -1px 4px #ccc inset;
   box-shadow: 0 -1px 4px #ccc inset;
-  border: 1px solid #ccc; */
-  padding: 16px;
-  border-radius: 16px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 3px;
 }
 .widget a {
-  color: rgba(0,0,0, 0.8);
-  mix-blend-mode: multiply;
+  color: #258fb8;
   text-decoration: none;
 }
 .widget a:hover {
-  color: black;
   text-decoration: underline;
 }
 .widget ul ul,
@@ -1346,50 +1343,4 @@ pre .javascript .function {
 .tagcloud a {
   margin-right: 5px;
   display: inline-block;
-}
-
-
-/* custom */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Sans+TC:wght@100..900&display=swap');
-
-* {
-  font-family: "Figtree", "Noto Sans TC", system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
-}
-
-.fullPage #main{
-  width: 100%;
-  float: none;
-  margin: 0;
-}
-
-.fullPage .article-inner {
-  box-shadow: none;
-  border: none;
-  border-radius: 24px;
-  background-color: transparent;
-}
-
-.fullPage .article-meta, .fullPage .article-footer, .fullPage .article-header {
-  display: none;
-}
-
-.fullPage .article-inner h2 {
-  margin-bottom: 32px;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.fullPage .article-inner p {
-  margin-top: 0;
-  margin-bottom: 8px;
-  text-align: center;
-  line-height: 1.8;
-}
-
-.fullPage .article-entry img {
-  width: 100%;
-  max-width: 560px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  margin-bottom: 64px;
 }
